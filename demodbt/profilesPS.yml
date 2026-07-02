@@ -1,0 +1,19 @@
+demodbt:
+  outputs:
+    dev:
+      catalog: demodbt_dev
+      host: dbc-0bd2ac37-eba9.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/4a78a74b776d93aa
+      schema: default
+      threads: 1
+      token: {{ env_var('DB_TOKEN') }}
+      type: databricks
+    prod:
+      catalog: demodbt_prod
+      host: dbc-0bd2ac37-eba9.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/4a78a74b776d93aa
+      schema: default
+      threads: 1
+      token: {{ env_var('DB_TOKEN') }}
+      type: databricks
+  target: dev

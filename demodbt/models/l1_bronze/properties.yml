@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: t_date
+    config:
+      materialized: table
+      schema: l1_bronze
+    columns:
+      - name: date_sk
+        data_tests: 
+          - not_null
+          - unique
+      - name: date
+        description: "The actual date value"
+
+  - name: t_store
+    config:
+      materialized: table
+      schema: l1_bronze
+    columns:
+      - name: store_sk
+        data_tests:
+          - not_null
+          - unique
+      - name: store_name
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ["Megamart Manhanttan", "Megamart Brooklyn", "Megamart San Jose", "Megamart Austin", "Megamart Toronto"]
+              severity: warn
+      - name: country
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ["USA", "Canada"]
+              severity: warn
+
+  - name: t_sales
+    config:
+      materialized: table
+      schema: l1_bronze
+    columns:
+      - name: sales_sk
+        data_tests:
+          - not_null
+          - unique
+      - name: gross_amount
+        data_tests:
+          - not_null
+          - non_negative
+      - name: net_amount
+        data_tests:
+          - not_null
+          - non_negative

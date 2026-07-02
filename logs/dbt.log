@@ -1,0 +1,33 @@
+[0m16:48:15.753247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781845db4260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781846e421b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781846c431a0>]}
+
+
+============================== 16:48:15.849476 | 71ea0521-4764-41f9-b37c-32feb6afc8e9 ==============================
+[0m16:48:15.849476 [info ] [MainThread]: Running with dbt=1.11.11
+[0m16:48:15.850488 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/vscode/.dbt', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt init', 'fail_fast': 'False', 'use_colors': 'True', 'quiet': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'partial_parse': 'True', 'target_path': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'log_format': 'default'}
+[0m16:48:21.469969 [debug] [MainThread]: Starter project path: /workspaces/unifly/dbt/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:48:21.973727 [info ] [MainThread]: 
+Your new dbt project "demodbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:48:21.974607 [info ] [MainThread]: Setting up your profile.
+[0m16:48:45.567076 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m16:48:45.568837 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m16:48:45.569781 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m16:51:10.406620 [info ] [MainThread]: Profile demodbt written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:51:10.409645 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 174.73245, "process_in_blocks": "132808", "process_kernel_time": 7.400957, "process_mem_max_rss": "299412", "process_out_blocks": "8", "process_user_time": 9.52637}
+[0m16:51:10.412309 [debug] [MainThread]: Command `dbt init` succeeded at 16:51:10.411976 after 174.74 seconds
+[0m16:51:10.413714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781816fd3470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x781816a92720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78184637d5b0>]}
+[0m16:51:10.415342 [debug] [MainThread]: Flushing usage events
+[0m16:51:11.653436 [debug] [MainThread]: An error was encountered while trying to flush usage events

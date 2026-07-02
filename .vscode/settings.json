@@ -1,0 +1,5 @@
+{
+    "dbt.dbtPythonPathOverride": "/workspaces/unifly/dbt/.venv/bin/python3",
+    "dbt.perspectiveTheme": "Monokai",
+    "dbt.queryLimit": 100
+}
